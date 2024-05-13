@@ -1,4 +1,4 @@
-name = "cf-worker-vless"
+name = "ws-echo-rs"
 main = "build/worker/shim.mjs"
 compatibility_date = "2023-03-22"
 
