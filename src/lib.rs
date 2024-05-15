@@ -27,7 +27,7 @@ async fn main(req: Request, env: Env, _: Context) -> Result<Response> {
                             }
                         }
                     }
-                    WebsocketEvent::Close(e) => break,
+                    WebsocketEvent::Close(e) => console_debug!("event clouse: {e:?}"),
                 },
                 Some(Err(e)) => console_debug!("err: {e}"),
                 None => break,
